@@ -37,6 +37,7 @@ ul{
 .hero{
   display: flex;
     margin: 25px;
+    height: 100vh;
 }
 h1{
   font-size: 30px;
@@ -57,6 +58,8 @@ button{
 
 .right{
   margin-left: 50px;
+  width: 250px;
+  height: 250px;
 }
 .right img{
   width: 30vh;
@@ -65,5 +68,41 @@ button{
   background-position: center;
 }
 
+
+
+
+@media screen and (max-width: 750px) {
+
+  .navbar{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .right{
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .right img{
+    width: 200px;
+    height: auto;
+  }
+
+  h1{
+    font-size: 24px;
+  }
+
+}
 
 
